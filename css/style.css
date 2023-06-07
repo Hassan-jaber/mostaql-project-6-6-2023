@@ -11,9 +11,10 @@
       font-family: Arial, sans-serif;
       text-align: center;
       height: 100vh;
-      background-image: url(../images/bg.png);
+      background-image: url(../images/bg-1.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
+      overflow-y: hidden;
   }
 
   h1 {
@@ -63,23 +64,36 @@
   }
 
   /* End Media Query */
-  .logo {
-      margin-top: 30px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-  }
 
+  
   .title {
+    margin-top: 30px;
       color: white;
+  }
+  .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  option{
+    width: 50px;
+    height: 30px;
+  }
+  select{
+    width: 50px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
   }
 
   .masseage {
       position: relative;
       width: 450px;
-      height: 250px;
-      margin: 50px auto;
-      border: 5px solid #E79726;
+      height: 200px;
+      margin: 30px auto;
+      border: 5px solid #A933AC;
       border-radius: 20px;
   }
 
@@ -90,7 +104,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: 460px;
-      height: 260px;
+      height: 210px;
       background-color: white;
       z-index: -9999;
       border-radius: 20px;
@@ -118,7 +132,7 @@
   .triangle::after {
       content: '';
       position: absolute;
-      bottom: -115px;
+      bottom: -65px;
       left: 50%;
       transform: translateX(-50%);
       border-left: 70px solid transparent;
@@ -129,19 +143,19 @@
   .triangle::before {
       content: '';
       position: absolute;
-      bottom: -7px;
+      bottom: 43px;
       left: 50%;
       transform: translateX(-50%) rotate(180deg) translateY(-97px);
       border-left: 60px solid transparent;
       border-right: 60px solid transparent;
-      border-bottom: 60px solid #E79726;
+      border-bottom: 60px solid #A933AC;
       z-index: 1;
   }
 
   #result {
       width: 100px;
-      height: 40px;
-      margin: 50px auto;
+      height: 20px;
+      margin: 30px auto;
       font-size: 40px;
       color: white;
       font-weight: bold;
@@ -153,7 +167,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       font-size: 50px;
-      background: linear-gradient(to left, #E68526, #EAB85A);
+      background: linear-gradient(90deg, #AB34AE -19.02%, #92278F 124.46%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
   }
@@ -171,7 +185,7 @@
   .progress {
       position: absolute;
       height: 30px;
-      background: linear-gradient(90deg, rgba(227, 142, 36, 1) 0%, rgba(229, 152, 36, 1) 100%);
+      background: linear-gradient(90deg, #AB34AE -19.02%, #92278F 124.46%);
       border-radius: 30px;
       top: 50%;
       transform: translateY(-50%);
@@ -181,7 +195,7 @@
   .gregorian-year {
       width: 200px;
       height: 40px;
-      background: linear-gradient(90deg, #E6A824 0%, #E59824 100%);
+      background: linear-gradient(90deg, #AB34AE -19.02%, #92278F 124.46%);
       position: absolute;
       left: 50%;
       top: 65%;
@@ -193,7 +207,10 @@
       font-size: 22px;
       border-radius: 8px;
   }
-
+.remaining-days,.remaining-weeks,.currentDate-element,.currentDate-element-p{
+    font-size: 18px;
+    color: white;
+}
   @media (max-width:768px) {
       .masseage {
           max-width: 300px;
@@ -216,5 +233,8 @@
       .title {
           margin-top: 20px;
           font-size: 18px;
+      }
+      .gregorian-year{
+        top: 69%;
       }
   }

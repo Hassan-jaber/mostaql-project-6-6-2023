@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Remaining Calculator</title>
+    <title>المتبقي على نهاية السنة | المقياس</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="logo">
-            <img src="images/logo.png" width="50" alt="">
-        </div>
-
+        <div class="header">
+            <select id="select" onchange="navigateToPage()">
+                <option value="ar" class="selectOption">ar</option>
+                <option value="en" class="selectOption">en</option>
+              </select>
     </div>
-    <h1 class="title">المتبقي على نهاية السنة | المقياس</h1>
-
+    <h1 class="title">المتبقي على نهاية السنة</h1>
+    <p class="currentDate-element-p">التاريخ الحالي: <span class="currentDate-element"></span></p>
     <div class="masseage">
         <div id="info-year">
             <h1 dir="rtl"></h1>
@@ -31,7 +32,22 @@
         <div class="progress"></div>
     </div>
     <div id="result"></div>
+    <p class="remaining-days"></p>
+    <p class="remaining-weeks"></p>
+    <script>
+        function navigateToPage() {
+      var selectElement = document.getElementById("select");
+      var selectedValue = selectElement.value;
 
+      if (selectedValue === "ar") {
+        // Replace with the URL or anchor you want to navigate to for the "ar" option
+        window.location.href = "#";
+      } else if (selectedValue === "en") {
+        // Replace with the URL of your "en" page
+        window.location.href = "en/en.html";
+      }
+    }
+    </script>
     <script src="main.js"></script>
 </body>
 
