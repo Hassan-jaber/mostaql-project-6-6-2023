@@ -14,10 +14,9 @@
         <div class="header">
             <select id="select" onchange="navigateToPage()">
                 <option value="ar" class="selectOption">ar</option>
-                <option value="en" class="selectOption">en</option>
+                <option value="en" selected class="selectOption">en</option>
               </select>
     </div>
-    <h1 class="title">Remaining of the year</h1>
     <p class="currentDate-element-p"> Current Date: <span class="currentDate-element"></span></p>
     <div class="masseage">
         <div id="info-year">
@@ -29,11 +28,12 @@
         <div class="triangle"></div>
     </div>
     <div class="Percentage">
+        <h1 class="title">Year progress</h1>
         <div class="progress"></div>
+        <div id="result"></div>
+        <p class="remaining-days">remaining days:</p>
+        <p class="remaining-weeks">remaining weeks:</p>
     </div>
-    <div id="result"></div>
-    <p class="remaining-days"></p>
-    <p class="remaining-weeks"></p>
     <script>
         
     function navigateToPage() {
