@@ -83,12 +83,24 @@
     height: 30px;
   }
   select{
-    width: 50px;
-    height: 30px;
+    width: 70px;
+    background-color: #A933AC;
+    color: white;
+    border: 1px solid yellow;
+    height: 35px;
     outline: none;
     font-size: 18px;
+    border-radius: 8px;
+    background-image: url(../images/icons8-earth-28.png);
+    background-repeat: no-repeat;
+    background-position: 2px 50%;
+    padding-left: 28px;
   }
-
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   .masseage {
       position: relative;
       width: 450px;
@@ -222,6 +234,18 @@
 }
 footer{
     position: relative;
+}
+.contact-us{
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-us a{
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 footer p{
     position: fixed;
