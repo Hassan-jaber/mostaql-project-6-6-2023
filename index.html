@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المتبقي على نهاية السنة | المقياس</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-hijri@2.1.2/moment-hijri.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,6 @@
                 <option value="en" class="selectOption">en</option>
               </select>
     </div>
-    <h1 class="title">المتبقي على نهاية السنة</h1>
     <p class="currentDate-element-p">التاريخ الحالي: <span class="currentDate-element"></span></p>
     <div class="masseage">
         <div id="info-year">
@@ -26,14 +27,17 @@
                 <p>السنة الميلادية</p>
             </div>
         </div>
-        <div class="triangle"></div>
+        <div class="triangle"></div>    
+
     </div>
     <div class="Percentage">
+        <h1 class="title">اكتملت هذه السنة بنسبة</h1>
         <div class="progress"></div>
+        <div id="result"></div>
+        <p class="remaining-days">الايام المتبقية: </p>
+        <p class="remaining-weeks">الاسابيع المتبقية: </p>
     </div>
-    <div id="result"></div>
-    <p class="remaining-days"></p>
-    <p class="remaining-weeks"></p>
+
     <script>
         function navigateToPage() {
       var selectElement = document.getElementById("select");
@@ -48,6 +52,7 @@
       }
     }
     </script>
+
     <script src="main.js"></script>
 </body>
 
