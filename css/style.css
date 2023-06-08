@@ -170,7 +170,7 @@
   #result {
       width: 100px;
       height: 15px;
-      margin: 10px auto;
+      margin: 15px auto;
       font-size: 40px;
       color: white;
       font-weight: bold;
@@ -264,7 +264,7 @@ footer p{
       }
       #result{
         height: 3px;
-        margin-top: 0px;
+        margin-top: -10px;
       }
       .masseage::after {
           max-width: 310px;
