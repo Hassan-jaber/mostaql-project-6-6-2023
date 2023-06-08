@@ -69,7 +69,7 @@
   .title {
          color: white;
          position: relative;
-         top: -50px;
+         top: -52px;
   }
   .header{
     width: 100%;
@@ -155,13 +155,18 @@
 
   #result {
       width: 100px;
-      height: 20px;
-      margin: 30px auto;
+      height: 15px;
+      margin: 10px auto;
       font-size: 40px;
       color: white;
       font-weight: bold;
   }
-
+.remaining-days{
+    margin-bottom: 4px;
+}
+.remaining-weeks{
+    margin-top: 4px;
+}
   #info-year h1 {
       position: absolute;
       left: 50%;
@@ -215,19 +220,39 @@
     font-size: 18px;
     color: white;
 }
+footer{
+    position: relative;
+}
+footer p{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: white;
+}
   @media (max-width:768px) {
       .masseage {
           max-width: 300px;
           max-height: 180px;
       }
-
+      #result{
+        height: 5px;
+        margin-top: 5px;
+      }
       .masseage::after {
           max-width: 310px;
           max-height: 190px;
       }
-
+      .remaining-weeks{
+        margin-top: 1px;
+      }
+      .remaining-days{
+        margin-top: 33px;   
+        margin-bottom: 8px;
+      }
       .triangle::before {
-          bottom: 62px;
+          bottom: 63px;
       }
 
       .triangle::after {
@@ -235,7 +260,7 @@
       }
 
       .title {
-          margin-top: 20px;
+          margin-top: 16px;
           font-size: 18px;
       }
       .gregorian-year{
