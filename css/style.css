@@ -170,16 +170,17 @@
   #result {
       width: 100px;
       height: 15px;
-      margin: 15px auto;
+      margin: -10px auto;
       font-size: 40px;
       color: white;
       font-weight: bold;
   }
 .remaining-days{
     margin-bottom: 4px;
+    margin-top: 40px;
 }
 .remaining-weeks{
-    margin-top: 4px;
+    margin-top: 0px;
 }
   #info-year h1 {
       position: absolute;
@@ -257,6 +258,20 @@ footer p{
     font-size: 16px;
     color: white;
 }
+#copy-url-btn{
+    position: fixed;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color: #A4BC92;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
   @media (max-width:768px) {
       .masseage {
           max-width: 300px;
@@ -271,10 +286,10 @@ footer p{
           max-height: 190px;
       }
       .remaining-weeks{
-        margin-top: 1px;
+        margin-top: -7px;
       }
       .remaining-days{
-        margin-top: 33px;   
+        margin-top: 47px;   
         margin-bottom: 8px;
       }
       .triangle::before {
