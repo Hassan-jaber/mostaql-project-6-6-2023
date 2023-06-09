@@ -309,11 +309,11 @@ footer p{
         margin-bottom: 8px;
       }
       .triangle::before {
-          bottom: 132px;
+          bottom: 134px;
       }
 
       .triangle::after {
-          bottom: 25px;
+          bottom: 27px;
       }
       .Percentage{
         top: 23px;
