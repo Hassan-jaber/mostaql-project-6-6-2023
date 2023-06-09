@@ -258,19 +258,29 @@ footer p{
     font-size: 16px;
     color: white;
 }
-#copy-url-btn{
+.btns{
     position: fixed;
-    outline: none;
-    border: none;
-    height: 30px;
-    background-color: #A4BC92;
-    color: white;
-    font-size: 15px;
-    border-radius: 8px;
-    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 100px;
+}
+.btns a,.btns button{
+    width: fit-content;
+    outline: none;
+    border: none;
+    background-color: #A4BC92;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 8px;
 }
   @media (max-width:768px) {
       .masseage {
