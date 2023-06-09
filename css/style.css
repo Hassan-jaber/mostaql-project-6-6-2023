@@ -11,10 +11,11 @@
       font-family: Arial, sans-serif;
       text-align: center;
       height: 100vh;
+      max-height: 100vh;
       background-image: url(../images/bg-1.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      overflow-y: hidden;
+      overflow-y: hidden !important;
   }
 
   h1 {
@@ -107,7 +108,7 @@
       position: relative;
       width: 450px;
       height: 200px;
-      margin: 30px auto;
+      margin: 0px auto;
       border: 5px solid #A933AC;
       border-radius: 20px;
   }
@@ -147,7 +148,7 @@
   .triangle::after {
       content: '';
       position: absolute;
-      bottom: -65px;
+      bottom: 5px;
       left: 50%;
       transform: translateX(-50%);
       border-left: 70px solid transparent;
@@ -158,7 +159,7 @@
   .triangle::before {
       content: '';
       position: absolute;
-      bottom: 43px;
+      bottom: 112px;
       left: 50%;
       transform: translateX(-50%) rotate(180deg) translateY(-97px);
       border-left: 60px solid transparent;
@@ -170,14 +171,14 @@
   #result {
       width: 100px;
       height: 15px;
-      margin: -10px auto;
+      margin: -16px auto;
       font-size: 40px;
       color: white;
       font-weight: bold;
   }
 .remaining-days{
     margin-bottom: 4px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .remaining-weeks{
     margin-top: 0px;
@@ -231,9 +232,13 @@
       font-size: 22px;
       border-radius: 8px;
   }
-.remaining-days,.remaining-weeks,.currentDate-element,.currentDate-element-p{
+.remaining-days,.remaining-weeks{
     font-size: 18px;
     color: white;
+}
+.currentDate-element,.currentDate-element-p{
+    color: #92278F;
+    font-size: 22px;
 }
 footer{
     position: relative;
@@ -286,32 +291,35 @@ footer p{
       .masseage {
           max-width: 300px;
           max-height: 180px;
+          margin-top: 15px;
       }
       #result{
         height: 3px;
-        margin-top: -10px;
+        margin-top: -25px;
       }
       .masseage::after {
           max-width: 310px;
           max-height: 190px;
       }
       .remaining-weeks{
-        margin-top: -7px;
+        margin-top: -3px;
       }
       .remaining-days{
-        margin-top: 47px;   
+        margin-top: 65px;   
         margin-bottom: 8px;
       }
       .triangle::before {
-          bottom: 63px;
+          bottom: 132px;
       }
 
       .triangle::after {
-          bottom: -45px;
+          bottom: 25px;
       }
-
+      .Percentage{
+        top: 0;
+      }
       .title {
-          margin-top: 16px;
+          margin-top: 25px;
           font-size: 18px;
       }
       .gregorian-year{

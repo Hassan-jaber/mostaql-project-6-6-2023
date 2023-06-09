@@ -27,7 +27,7 @@ function calculateRemainingDaysAndWeeks() {
   progressBar.style.width = percentagePassed + "%";
 
   // Format the current date as "day/month/year"
-  const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
+  const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}`;
 
   // Set the formatted date to the element
   document.querySelector(".currentDate-element").textContent = formattedDate;
