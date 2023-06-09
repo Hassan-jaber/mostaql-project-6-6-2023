@@ -295,7 +295,7 @@ footer p{
       }
       #result{
         height: 3px;
-        margin-top: -25px;
+        margin-top: -30px !important;
       }
       .masseage::after {
           max-width: 310px;
