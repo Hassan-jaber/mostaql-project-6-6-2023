@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتبقي على نهاية السنة الهجرية | المقياس</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-hijri@2.1.2/moment-hijri.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="lang" href="en">English</a>
+        </div>
+        <div class="masseage">
+            <p class="currentDate-element-p"> <span class="currentDate-element"></span></p>
+            <div id="info-year">
+                <h1 dir="rtl"></h1>
+                <div class="gregorian-year">
+                    <p>السنة الهجرية</p>
+                </div>
+            </div>
+            <div class="triangle"></div>
+
+        </div>
+        <div class="Percentage">
+            <h1 class="title">اكتملت هذه السنة بنسبة</h1>
+            <div class="progress"></div>
+            <div id="result"></div>
+            <p class="remaining-days">الايام المتبقية: </p>
+            <p class="remaining-weeks">الاسابيع المتبقية: </p>
+        </div>
+        <footer>
+            <div class="contact-us">
+                <a href="https://inv.almiqias.com/contact/ar" target="_blank">تواصل معنا &nbsp; <img
+                        src="../images/icons8-message-32.png" alt=""></a>
+            </div>
+            <p class="copyright">حقوق النشر © المقياس</p>
+            <p id="message-copied"></p>
+            <div class="btns" style="width: 240px;">
+                <button id="copy-url-btn" style="width: 105px;">انسخ الرابط</button>
+                <a class="anothor-calendar" href="../index" style="width: 125px;">التقويم الميلادي</a>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('copy-url-btn').addEventListener('click', function () {
+                var messageElement = document.getElementById('message-copied');
+
+                // Copy the message "copied!" to the message element
+                messageElement.innerText = 'تم النسخ';
+
+                // Remove the message after 3 seconds
+                setTimeout(function () {
+                    messageElement.innerText = '';
+                }, 1000);
+            });
+        </script>
+        <div class="ads-container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8083085385088514" crossorigin="anonymous"></script>
+            <!-- al2 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8083085385088514" data-ad-slot="9684202849" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SKMCHXPKY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-9SKMCHXPKY');
+        </script>
+
+        <script src="hijri.js"></script>
+</body>
+
+</html>

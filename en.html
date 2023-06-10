@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder of Gregorian year | Almiqias</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- 
+            <select id="select" onchange="navigateToPage()">
+                <option value="en"  class="selectOption">en</option>  
+                <option value="ar"  class="selectOption">ar</option> 
+            </select>-->
+            <a class="lang" href="index">العربية</a>
+        </div>
+        <div class="masseage">
+            <p class="currentDate-element-p"> <span class="currentDate-element"></span></p>
+            <div id="info-year">
+                <h1 dir="rtl"></h1>
+                <div class="gregorian-year">
+                    <p> Gregorian Year</p>
+                </div>
+            </div>
+            <div class="triangle"></div>
+        </div>
+        <div class="Percentage">
+            <h1 class="title">Year progress</h1>
+            <div class="progress"></div>
+            <div id="result"></div>
+            <p class="remaining-days">remaining days:</p>
+            <p class="remaining-weeks">remaining weeks:</p>
+        </div>
+        <footer>
+            <div class="contact-us">
+                <a href="https://inv.almiqias.com/contact/en" target="_blank"> <img src="images/icons8-message-32.png"
+                        alt=""> &nbsp; contact us </a>
+            </div>
+            <p class="copyright">Copyright © Almiqias</p>
+            <p id="message-copied"></p>
+            <div class="btns" style="width: 240px;">
+                <button id="copy-url-btn">Copy URL</button>
+                <a class="anothor-calendar" href="hijri/en">Hijri Calendar</a>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('copy-url-btn').addEventListener('click', function () {
+                var messageElement = document.getElementById('message-copied');
+
+                // Copy the message "copied!" to the message element
+                messageElement.innerText = 'Copied!';
+
+                // Remove the message after 3 seconds
+                setTimeout(function () {
+                    messageElement.innerText = '';
+                }, 1000);
+            });
+        </script>
+       <div class="ads-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8083085385088514" crossorigin="anonymous"></script>
+        <!-- al2 -->
+        <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-8083085385088514" data-ad-slot="9684202849" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SKMCHXPKY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-9SKMCHXPKY');
+    </script>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
