@@ -10,7 +10,7 @@
       padding: 0;
       font-family: Arial, sans-serif;
       text-align: center;
-      height: 100vh;
+      height: 100vh !important;
       max-height: 100vh;
       background-image: url(../images/bg-1.png);
       background-repeat: no-repeat;
@@ -169,20 +169,11 @@
   }
 
   #result {
-      width: 100px;
-      height: 15px;
-      margin: -16px auto;
       font-size: 40px;
       color: white;
       font-weight: bold;
   }
-.remaining-days{
-    margin-bottom: 4px;
-    margin-top: 50px;
-}
-.remaining-weeks{
-    margin-top: 0px;
-}
+
   #info-year h1 {
       position: absolute;
       left: 50%;
@@ -241,38 +232,31 @@
     font-size: 22px;
 }
 footer{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 180px;
 }
-.contact-us{
-    position: fixed;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 .contact-us a{
     font-size: 16px;
     color: white;
     display: flex;
     align-items: center;
 }
-footer p{
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+.copyright{
     font-size: 16px;
     color: white;
 }
 .btns{
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 100px;
-}
+} 
 .btns a,.btns button{
     width: fit-content;
     outline: none;
@@ -287,26 +271,28 @@ footer p{
     align-items: center;
     padding: 15px 8px;
 }
+#message-copied{
+    color: white;
+    font-size: 18px;
+    min-height: 21px;
+    margin-bottom: 16px;
+}
+.anothor-calendar{
+    margin-left: 2%;
+}
+#copy-url-btn{
+    margin-right: 2%;
+}
+
   @media (max-width:768px) {
       .masseage {
           max-width: 300px;
           max-height: 180px;
           margin-top: 15px;
       }
-      #result{
-        height: 3px;
-        margin-top: -6px !important;
-      }
       .masseage::after {
           max-width: 310px;
           max-height: 190px;
-      }
-      .remaining-weeks{
-        margin-top: -3px;
-      }
-      .remaining-days{
-        margin-top: 65px;   
-        margin-bottom: 8px;
       }
       .triangle::before {
           bottom: 134px;

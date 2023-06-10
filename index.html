@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المتبقي على نهاية السنة | المقياس</title>
+    <title>المتبقي على نهاية السنة الميلادية | المقياس</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <a class="lang" href="en/en.html">English</a>
+            <a class="lang" href="en">English</a>
         </div>
         <div class="masseage">
             <p class="currentDate-element-p"> <span class="currentDate-element"></span></p>
@@ -37,12 +37,52 @@
                 <a href="https://inv.almiqias.com/contact/ar" target="_blank">تواصل معنا &nbsp; <img
                         src="images/icons8-message-32.png" alt=""></a>
             </div>
-            <p>حقوق النشر © المقياس</p>
-            <div class="btns" style="width: 250px;">
+            <p class="copyright">حقوق النشر © المقياس</p>
+            <div id="message-copied" style="display: none;"></div>
+            <div class="btns">
                 <button id="copy-url-btn" style="width: 100px;">انسخ الرابط</button>
-                <a class="anothor-calendar" href="hijri/hijri_ar.html" style="width: 120px;">التقويم الهجري</a>
+                <a class="anothor-calendar" href="hijri/ar" style="width: 120px;">التقويم الهجري</a>
             </div>
         </footer>
+        <script>
+document.getElementById('copy-url-btn').addEventListener('click', function() {
+  var messageElement = document.getElementById('message-copied');
+  
+  // Set the message content to 'تم النسخ'
+  messageElement.innerText = 'تم النسخ';
+  
+  // Make the message element visible by setting its display style to 'block'
+  messageElement.style.display = 'block';
+  
+  // Remove the message after 3 seconds
+  setTimeout(function() {
+    // Reset the message content to an empty string
+    messageElement.innerText = '';
+    
+    // Hide the message element by setting its display style to 'none'
+    messageElement.style.display = 'none';
+  }, 1000);
+});
+
+
+        </script>
+<div class="ads-container">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8083085385088514" crossorigin="anonymous"></script>
+    <!-- al2 -->
+    <ins class="adsbygoogle" style="display: block;height: 50px;" data-ad-client="ca-pub-8083085385088514" data-ad-slot="9684202849" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SKMCHXPKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-9SKMCHXPKY');
+</script>
 
         <script src="main.js"></script>
 </body>
